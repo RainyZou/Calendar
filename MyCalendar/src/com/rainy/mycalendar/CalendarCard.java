@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -35,6 +36,8 @@ public class CalendarCard extends View {
 	private Cell mClickCell;
 	private float mDownX;
 	private float mDownY;
+
+	private static String TAG = "CalendarCard";
 
 	/**
 	 * 单元格点击的回调接口
@@ -171,6 +174,8 @@ public class CalendarCard extends View {
 			if (Math.abs(disX) < touchSlop && Math.abs(disY) < touchSlop) {
 				int col = (int) (mDownX / mCellSpace);
 				int row = (int) (mDownY / mCellSpace);
+				Log.i(TAG, "mDownX = " + mDownX + "  mDownY = " + mDownY);
+				Log.i(TAG, "col = " + col + "  row = " + row);
 				measureClickCell(col, row);
 			}
 			break;
