@@ -7,7 +7,7 @@
    <RelativeLayout
         android:id="@+id/lay_title"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@color/holo_blue_dark"
 		 >
 
@@ -38,7 +38,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="53.0dip"
+        android:layout_height="45.0dip"
         android:background="#ff394147"
         android:gravity="center_vertical" >
 
