@@ -6,16 +6,17 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
-public class SlidingFragmentActivity extends FragmentActivity implements SlidingActivityBase {
+public class SlidingFragmentActivity extends SherlockFragmentActivity implements SlidingActivityBase {
 
 	private SlidingActivityHelper mHelper;
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.FragmentActivity#onCreate(android.os.Bundle)
 	 */
-	@Override
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mHelper = new SlidingActivityHelper(this);
